@@ -1,0 +1,56 @@
+{{>layouts/header}}
+<br><br><br><br>
+
+<!--jumbotron-->
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div>
+            <h3 class="n2 ml-4">문의하기</h3>
+            <br>
+            <div class="n2 ml-4">궁금하신 부분 언제든지 연락주세요.</div>
+            <div class="n2 ml-4">항상 친절하고 빠르게 답변드리도록 하겠습니다.</div>
+        </div>
+        <hr class="ml-4 mr-4">
+
+        <div class="container">
+            <form action="/qna/create" method="post">
+                <div class="form-group text-center" >
+                    <label for="exampleInputEmail1" class="n2 lab mx-3" >성함</label>
+                    <div style="margin:0 auto;width:32%">
+                        <input type="text" class="form-control" name="qna_name" aria-describedby="emailHelp" >
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <label for="exampleInputPassword1" class="n2 lab mx-3">휴대폰 번호</label>
+                    <div style="margin:0 auto;width:32%">
+                        <input type="text" class="form-control" name="qna_phone" >
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <label for="exampleInputPassword1" class="n2 lab mx-3">이메일</label>
+                    <div style="margin:0 auto;width:32%">
+                        <input type="email" class="form-control" name="qna_email">
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <label for="exampleInputPassword1" class="n2 lab mx-3">내용</label>
+                    <div style="margin:0 auto;width:32%">
+                        <p><textarea id="" cols="44" rows="8" name="qna_content"></textarea></p>
+                    </div>
+                </div>
+
+                <div class="form-group text-center">
+
+                    <div style="margin:0 auto;width:32%">
+                        <input type="submit" class="n2 form-control btn btn-secondary" id="exampleInputPassword1" value="전송">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br><br>
+
+{{>layouts/footer}}
